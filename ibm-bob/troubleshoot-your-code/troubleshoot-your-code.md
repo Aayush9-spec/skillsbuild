@@ -28,7 +28,7 @@ After completing this lab, you can:
 
 <a name="task01"></a>
 
-## Task 1: Review the scenario and problem context <a name="task01"></a>
+## Task 1: Review the scenario and problem context
 
 ### Background
 
@@ -41,7 +41,7 @@ You run a fictional business called **Roast Toast Coast Café**. To attract new 
 
 You write the initial version of the site yourself using basic HTML, CSS, and JavaScript.
 
-You can find this HTML code snippet to use here --> [Menu HTML](https://github.com/academic-initiative/skillsbuild/blob/main/ibm-bob/troubleshoot-your-code/file/Menu.html)
+You can find this HTML code snippet to use here → [Menu HTML](./file/Menu.html)
 
 <img src="./images/roast_toast.png" alt="Roast Toast" width="70%">
 
@@ -64,7 +64,7 @@ Your goal is to identify and correct all errors that prevent the page from rende
 
 <a name="task02"></a>
 
-## Task 2: Analyze the code with IBM Bob <a name="task02"></a>
+## Task 2: Analyze the code with IBM Bob
 
 In this task, you guide IBM Bob to perform a structured review of your HTML file and identify issues by type and severity.
 
@@ -81,25 +81,27 @@ You now see your source code in VS Code, with IBM Bob available alongside it.
 
 <img src="./images/00-intro_page_1.png" alt="Intro" width="70%">
 
->[!Important]
->*Installation notes:* <a name="install"></a>
->- Make sure you have VS Code installed, see <a href="https://code.visualstudio.com/docs/introvideos/basics" target="_blank">Getting started with VS Code</a>.  
->- Make sure you have **IBM Bob** <a href="http://ibm.biz/university-bob" target="_blank">installed</a>, and review its <a href="https://bob.ibm.com/docs/ide" target="_blank">key capabilities</a> to understand how you can use it as an AI SDLC partner. 
+> [!IMPORTANT]
+> **Installation notes:** <a name="install"></a>
+> - Make sure you have VS Code installed, see <a href="https://code.visualstudio.com/docs/introvideos/basics" target="_blank">Getting started with VS Code</a>.
+> - Make sure you have **IBM Bob** <a href="http://ibm.biz/university-bob" target="_blank">installed</a>, and review its <a href="https://bob.ibm.com/docs/ide" target="_blank">key capabilities</a> to understand how you can use it as an AI SDLC partner.
 
 
-### Task 2b: Prompt IBM Bob to analyze the code 
+### Task 2b: Prompt IBM Bob to analyze the code
 
 Before submitting a request, ensure that **Code mode** is selected in the IBM Bob panel.
 
 Enter the following prompt, replacing the file path with the location of your HTML file:
 
-    Can you identify all syntax and functional errors in this HTML file:
-    "[your-file-path]/MenuHTML.html"?
+```
+Can you identify all syntax and functional errors in this HTML file:
+"[your-file-path]/Menu.html"?
 
-    Perform a thorough analysis.
-    Group the findings by severity (critical, high, medium, low).
-    Indicate whether each issue is related to syntax, functionality, or structure.
-    Identify anything that could prevent the page from rendering or behaving correctly.
+Perform a thorough analysis.
+Group the findings by severity (critical, high, medium, low).
+Indicate whether each issue is related to syntax, functionality, or structure.
+Identify anything that could prevent the page from rendering or behaving correctly.
+```
 
 When IBM Bob requests access to the file, select **Approve**.
 
@@ -133,7 +135,7 @@ For each issue, IBM Bob provides a brief explanation of the impact and a suggest
 
 <a name="task03"></a>
 
-## Task 3: Apply code corrections with IBM Bob <a name="task03"></a>
+## Task 3: Apply code corrections with IBM Bob
 
 In this task, you ask IBM Bob to implement the recommended fixes and update the code accordingly.
 
@@ -141,9 +143,11 @@ In this task, you ask IBM Bob to implement the recommended fixes and update the 
 
 With the same file open and **Code mode** enabled, submit the following prompt:
 
-    Rewrite this file to fix the identified issues.
-    Apply the recommendations from your previous analysis.
-    Preserve the original structure where possible.
+```
+Rewrite this file to fix the identified issues.
+Apply the recommendations from your previous analysis.
+Preserve the original structure where possible.
+```
 
 IBM Bob requests permission to modify the file. Select **Approve**.
 
@@ -176,7 +180,7 @@ The page now renders as expected:
 
 <a name="task04"></a>
 
-## Task 4: Reflect on differences between the original and corrected code <a name="task04"></a>
+## Task 4: Reflect on differences between the original and corrected code
 
 ### Purpose of this reflection
 
@@ -193,7 +197,7 @@ Review the original code and the corrected version side by side in VS Code. Cons
     Observe changes to the HTML structure or CSS selectors. Consider how these changes affected styling consistency and element targeting.
 
 *   **Error visibility**  
-    Think about which issues were difficult to identify manually. Reflect on how IBM Bob’s categorized analysis helped surface less obvious problems.
+    Think about which issues were difficult to identify manually. Reflect on how IBM Bob's categorized analysis helped surface less obvious problems.
 
 *   **Prompt effectiveness**  
     Review the prompts you used. Consider how specificity and structured requirements influenced the usefulness of the output.
